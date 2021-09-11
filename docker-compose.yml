@@ -1,0 +1,27 @@
+version: "3.7"
+services:
+  mongo:
+    image: 'mongo:latest'
+    container_name: 'mongo'
+    environment:
+      - TZ=America/Bogota
+    networks:
+      - nodejs-app
+  api:
+    image: 'api:0.1.0'
+    container_name: 'api'
+    ports:
+      - '7001:7001'
+    environment:
+      - TZ=America/Bogota
+      - HOST_DB=mongo
+      - NAME_DB=test
+    networks:
+      - nodejs-app
+    depends_on: 
+     - mongo
+  
+    
+networks:
+  nodejs-app:
+    driver: bridge
