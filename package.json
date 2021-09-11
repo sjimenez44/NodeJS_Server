@@ -1,0 +1,40 @@
+{
+  "name": "nodejs_server",
+  "version": "1.0.0",
+  "description": "Template for backend projects",
+  "main": "app/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon app/server.js",
+    "start": "node app/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sjimenez44/NodeJS_Server.git"
+  },
+  "keywords": [
+    "template",
+    "backend",
+    "nodejs"
+  ],
+  "author": "Santiago Jiménez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sjimenez44/NodeJS_Server/issues"
+  },
+  "homepage": "https://github.com/sjimenez44/NodeJS_Server#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  },
+  "dependencies": {
+    "axios": "^0.21.4",
+    "bcrypt": "^5.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.0.5",
+    "morgan": "^1.10.0",
+    "uuid": "^8.3.2"
+  }
+}
